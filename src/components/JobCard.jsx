@@ -6,14 +6,11 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
+
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -34,7 +31,7 @@ export default function JobCard() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, minHeight: 400}} >
       <div className='flex pl-2 border border-2 w-3/5 rounded-xl'><img src="hourglass.png" className='h-4 mt-1 mr-1'/>Posted 10 days ago</div>
       <CardHeader
         title="Shrimp and Chorizo Paella"

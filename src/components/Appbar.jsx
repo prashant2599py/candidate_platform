@@ -1,16 +1,17 @@
 import React from 'react'
 import BasicSelect from './BasicSelect'
 import { useSelector } from 'react-redux'
-import JobList from './JobList'
+import selectionBox from './index.js'
 
 
 const Appbar = () => {
     const state = useSelector(state => state.state)
   return (
-    <div>
-      <div className='h-32 '>
-          <BasicSelect/>
-      </div>
+    <div className='h-32 flex'>      
+           <div  >
+                <BasicSelect/>
+           </div>
+       
     </div>
   )
 }
